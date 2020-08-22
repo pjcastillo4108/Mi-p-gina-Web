@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block head %} 
+<meta name="description" content="">
+<meta name="author" content="">
+{% endblock %}
+
+{% block titile %}
+Contacto 
+{% endblock %}
+
+{% load static %}
+{% block blackground %}  {% static 'core/img/cafe.jpg' %} {% endblock %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading"></span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Puedes contactarme a través de mi correo o mi número telefónico.</p>
+        <p><b>Correo:</b><a href="mailto:pjcastillo@uc.cl"> pjcastillo@uc.cl</p>
+        
+        <p><b>Teléfono:</b> +569 62383464</p>
+        
+    </div>
+</div>  
+{% endblock %}

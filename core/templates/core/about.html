@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block titile %}
+Acerca de 
+{% endblock %}
+
+{% load static %}
+{% block blackground %} {% static 'core/img/santiago.jpeg' %} {% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src= "{% static 'core/img/Captura2.png' %}"  alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Pablo Castillo</h2>   
+        <p>Nací en ciudad de La Serena. Y estudié ingeniería civil de industrias en la universidad Católica de Chile. Actualmente vivo en Santiago. </p>
+    </div>  
+</div>  
+
+{% endblock %}

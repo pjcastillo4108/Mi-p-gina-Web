@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block titile %}
+Portada 
+{% endblock %}
+
+{% load static %}
+{% block blackground %}  {% static 'core/img/data-science2.png' %} {% endblock %}
+
+{% block headers %}
+<h1>Pablo Castillo</h1>
+
+
+<span class="subheading">
+<a href="{% url 'curriculum' %}" style="color:#FFFFFF">Ver Curriculum Vitae </a></span>
+{% endblock %}

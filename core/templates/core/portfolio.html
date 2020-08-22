@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+
+{% block titile %}
+
+Portafolio 
+
+{% endblock %}
+
+{% load static %}
+{% block blackground %}  {% static 'core/img/Home2.jpg' %} {% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading"> Algunos proyectos</span>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row project">  	
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/Biblioteca.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Libros favoritos</h2>   
+    <p>A continuación comparto mis libros favoritos del último año, una breve reseña y mis conclusiones.</p>
+    <p><a href="http://google.com">Más información</a></p>
+</div>
+</div>
+<!-- Proyecto -->
+<div class="row project">  	
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/Tensorflow.png' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">TensorFlow 2.0</h2>   
+    <p>Tensorflow 2.0 ha llegado para quedarse! Acá revisamos la biblioteca he implementamos un proyecto.</p>
+    <p><a href="http://google.com">Más información</a></p>
+</div>
+</div>
+<!-- Proyecto -->
+<div class="row project">  	
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/WebScrapping.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Web Scrapping</h2>   
+    <p>La importancia del Web Scrapping cuando eres emprendedor y como esta herramienta puede ser útil al combinarla con Power BI.</p>
+    <p><a href="http://google.com">Más información</a></p>
+</div>
+</div>
+<!-- Proyecto -->
+<div class="row project">  	
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/Construccion.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Proyectos de construcción</h2>   
+    <p>Durante mi tiempo en la universidad, realicé algunos proyectos de construcción y a continuación dejo algunos TIPs.</p>
+    <p><a href="http://google.com">Más información</a></p>
+</div>
+</div>
+<!-- Proyecto -->
+<div class="row project">  	
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/django.png' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">Django</h2>   
+    <p>Esta página web utiliza el framework Django, a continuación puedes encontrar el proyecto en Github.</p>
+    <p><a href="http://google.com">Más información</a></p>
+</div>
+</div>
+{% endblock %}
